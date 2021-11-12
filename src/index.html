@@ -5,12 +5,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>UBER</title>
+   <link rel="shortcut icon" href="icons/uber_logo.ico" type="image/x-icon">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
    <link rel="stylesheet" href="css/style.min.css">
-   <title>UBER777</title>
+   
 </head>
 
 <body>
@@ -20,12 +22,17 @@
          <div class="container">
             <ul class="menu">
                <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-               <li class="menu__item"><a href="#" class="menu__link">Со своим автомобилем</a></li>
-               <li class="menu__item"><a href="#" class="menu__link">На автомобиле компании</a></li>
-               <li class="menu__item"><a href="#" class="menu__link">Требования</a></li>
+               <li class="menu__item"><a href="#require"require class="menu__link">Со своим автомобилем</a></li>
+               <li class="menu__item"><a href="#require" class="menu__link">На автомобиле компании</a></li>
+               <li class="menu__item"><a href="#require_warning" class="menu__link">Требования</a></li>
                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-               <li class="menu__item"><a href="#" class="menu__link">Оставить заявку</a></li>
+               <li class="menu__item"><a href="#promo__btn" class="menu__link">Оставить заявку</a></li>
             </ul>
+         </div>
+         <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
          </div>
       </nav>
       <div class="subheader">
@@ -44,12 +51,14 @@
                   <a href="tel:+74957970988" class="subheader__phone">8 495 797 09 88</a>
                </div>
                <div class="col-6 col-md-3">
+                  <a href="tel:+74957970988" class="xs-visible subheader__phone">8 495 797 09 88</a>
                   <button class="subheader__btn">
                      заказать звонок
                   </button>
                </div>
             </div>
          </div>
+        
       </div>
 
    </header>
@@ -60,7 +69,7 @@
                <h1 class="promo__header">
                   КОМПАНИЯ UBER PARTNERS!
                </h1>
-               <h2 class="promo__subheader">
+               <h2 class="promo__subheader" id="promo__btn">
                   ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
                </h2>
                <div class="promo__descr">
@@ -208,37 +217,37 @@
       <div class="title">мобильное приложение убер</div>
       <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</div>
       <div class="row">
-         <div class="col-md-4">
+         <div class="col-md-6 col-lg-4">
             <div class="mobile__item mobile__item__1">
                <div class="mobile__item__subtitle">оформление заказа одним касанием</div>
                <div class="mobile__subtitle__plus"></div>
             </div>
          </div>
-         <div class="col-md-4">
+         <div class="col-md-6 col-lg-4">
             <div class="mobile__item mobile__item__2">
                <div class="mobile__item__subtitle">надежная подача</div>
                <div class="mobile__subtitle__plus"></div>
             </div>
          </div>
-         <div class="col-md-4">
+         <div class="col-md-6 col-lg-4">
             <div class="mobile__item mobile__item__3">
                <div class="mobile__item__subtitle">прозрачные цены</div>
                <div class="mobile__subtitle__plus"></div>
             </div>
          </div>
-         <div class="col-md-4">
+         <div class="col-md-6 col-lg-4">
             <div class="mobile__item mobile__item__4">
                <div class="mobile__item__subtitle">безналичная оплата</div>
                <div class="mobile__subtitle__plus"></div>
             </div>
          </div>
-         <div class="col-md-4">
+         <div class="col-md-6 col-lg-4">
             <div class="mobile__item mobile__item__5">
                <div class="mobile__item__subtitle">обратная связь</div>
                <div class="mobile__subtitle__plus"></div>
             </div>
          </div>
-         <div class="col-md-4">
+         <div class="col-md-6 col-lg-4">
             <div class="mobile__item mobile__item__6">
                <div class="mobile__item__subtitle">разделить стоимость поездки</div>
                <div class="mobile__subtitle__plus"></div>
@@ -258,7 +267,7 @@
 
    </div>
 </section>
-<section class="require">
+<section class="require" id="require">
    <div class="container">
       <div class="label">Возможности</div>
       <div class="title">условия и требования</div>
@@ -300,7 +309,7 @@
                В день заработок составляет 7000-12000р + бонус 3000т рублей
             </div> -->
          </div></div>
-         <div class="col-md-6"> <div class="require__block require__block__nombt warning">
+         <div class="col-md-6"> <div class="require__block require__block__nombt warning" id="require_warning">
             <div class="require__title">ТРЕБОВАНИЕ:</div>
             <ul class="require__list">
                <li>Наличие автомобиля без рекламы.</li>
@@ -384,5 +393,6 @@
    </div>
 </footer>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
